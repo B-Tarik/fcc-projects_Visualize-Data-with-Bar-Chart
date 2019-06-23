@@ -1,11 +1,11 @@
 # Technical Documentation Page
 ### About the project
 
-it's a freecodecamp project in the "Responsive Web Design Projects" module, you have to build a Technical Documentation Page.
+it's a freecodecamp project in the "Data Visualization Projects" module, you have to Visualize Data with a Bar Chart.
 
 ### Tools used
 
-**Front-end:** React
+**Front-end:** D3
 
 ### Screenshot
 
@@ -13,22 +13,20 @@ it's a freecodecamp project in the "Responsive Web Design Projects" module, you 
 
 ### Link
 
-https://codepen.io/B-Tarik/full/yWJmgd
+https://codepen.io/B-Tarik/full/qvNaVM
 
 ### User stories
 
-1. I can see a main element with a corresponding ```id="main-doc"```, which contains the page's main content (technical documentation).
-2. Within the ```#main-doc``` element, I can see several section elements, each with a class of main-section. There should be a minimum of ```5```.
-3. The first element within each ```.main-section``` should be a header element which contains text that describes the topic of that section.
-4. Each section element with the class of ```main-section``` should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "Javascript and Java" should have a corresponding ```id="Javascript_and_Java```").
-5. The ```.main-section``` elements should contain at least ```10 p``` elements total (not each).
-6. The ```.main-section``` elements should contain at least ```5 code``` elements total (not each).
-7. The ```.main-section``` elements should contain at least ```5 li``` items total (not each).
-8. I can see a nav element with a corresponding ```id="navbar"```.
-9. The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
-10. Additionally, the navbar should contain link ```a``` elements with the class of ```nav-link```. There should be one for every element with the class ```main-section```.
-11. The header element in the navbar must come before any link ```a``` elements in the navbar.
-12. Each element with the class of ```nav-link``` should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
-13. When I click on a navbar element, the page should navigate to the corresponding section of the ```main-doc``` element (e.g. If I click on a ```nav-link``` element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
-14. On regular sized devices (laptops, desktops), the element with ```id="navbar"``` should be shown on the left side of the screen and should always be visible to the user.
-15. My Technical Documentation page should use at least one media query.
+1. My chart should have a title with a corresponding ```id="title"```.
+2. My chart should have a g element ```x-axis``` with a corresponding ```id="x-axis"```.
+3. My chart should have a g element ```y-axis``` with a corresponding ```id="y-axis"```.
+4. Both axes should contain multiple tick labels, each with the corresponding ```class="tick"```.
+5. My chart should have a rect element for each data point with a corresponding ```class="bar"``` displaying the data.
+6. Each bar should have the properties ```data-date``` and ```data-gdp``` containing date and GDP values.
+7. The bar elements' ```data-date``` properties should match the order of the provided data.
+8. The bar elements' ```data-gdp``` properties should match the order of the provided data.
+9. Each bar element's height should accurately represent the data's corresponding GDP.
+10. The ```data-date``` attribute and its corresponding bar element should align with the corresponding value on the ```x-axis```.
+11. The ```data-gdp``` attribute and its corresponding bar element should align with the corresponding value on the ```y-axis```.
+12. I can mouse over an area and see a tooltip with a corresponding ```id="tooltip"``` which displays more information about the area.
+13. My tooltip should have a ```data-date``` property that corresponds to the ```data-date``` of the active area.
