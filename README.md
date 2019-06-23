@@ -1,4 +1,4 @@
-# Technical Documentation Page
+# Visualize Data with a Bar Chart
 ### About the project
 
 it's a freecodecamp project in the "Data Visualization Projects" module, you have to Visualize Data with a Bar Chart.
